@@ -1,0 +1,81 @@
+ .gitignore                                         |   69 [32m++[m
+ .metadata                                          |   30 [32m+[m
+ README.md                                          |   17 [32m+[m
+ analysis_options.yaml                              |   33 [32m+[m
+ android/.gitignore                                 |   14 [32m+[m
+ android/app/build.gradle.kts                       |   56 [32m+[m
+ android/app/src/debug/AndroidManifest.xml          |    7 [32m+[m
+ android/app/src/main/AndroidManifest.xml           |   64 [32m++[m
+ .../main/kotlin/com/sujith/daynest/MainActivity.kt |   32 [32m+[m
+ .../main/res/drawable-v21/launch_background.xml    |   12 [32m+[m
+ .../src/main/res/drawable/ic_task_notification.xml |    6 [32m+[m
+ .../src/main/res/drawable/launch_background.xml    |   12 [32m+[m
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |    5 [32m+[m
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |    5 [32m+[m
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   |  Bin [31m0[m -> [32m5507[m bytes
+ .../res/mipmap-hdpi/ic_launcher_foreground.png     |  Bin [31m0[m -> [32m22251[m bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png |  Bin [31m0[m -> [32m5507[m bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   |  Bin [31m0[m -> [32m2913[m bytes
+ .../res/mipmap-mdpi/ic_launcher_foreground.png     |  Bin [31m0[m -> [32m10598[m bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png |  Bin [31m0[m -> [32m2913[m bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  |  Bin [31m0[m -> [32m8673[m bytes
+ .../res/mipmap-xhdpi/ic_launcher_foreground.png    |  Bin [31m0[m -> [32m38942[m bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    |  Bin [31m0[m -> [32m8673[m bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png |  Bin [31m0[m -> [32m17865[m bytes
+ .../res/mipmap-xxhdpi/ic_launcher_foreground.png   |  Bin [31m0[m -> [32m89258[m bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   |  Bin [31m0[m -> [32m17865[m bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    |  Bin [31m0[m -> [32m31089[m bytes
+ .../res/mipmap-xxxhdpi/ic_launcher_foreground.png  |  Bin [31m0[m -> [32m156789[m bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  |  Bin [31m0[m -> [32m31089[m bytes
+ android/app/src/main/res/raw/keep.xml              |    2 [32m+[m
+ android/app/src/main/res/values-night/styles.xml   |   18 [32m+[m
+ .../src/main/res/values/daynest_icon_colors.xml    |    2 [32m+[m
+ android/app/src/main/res/values/styles.xml         |   18 [32m+[m
+ .../app/src/main/res/xml/daynest_backup_rules.xml  |    8 [32m+[m
+ .../main/res/xml/daynest_data_extraction_rules.xml |   17 [32m+[m
+ android/app/src/profile/AndroidManifest.xml        |    7 [32m+[m
+ android/build.gradle.kts                           |   24 [32m+[m
+ android/gradle.properties                          |    6 [32m+[m
+ android/gradle/wrapper/gradle-wrapper.properties   |    5 [32m+[m
+ android/settings.gradle.kts                        |   26 [32m+[m
+ assets/branding/daynest_icon.png                   |  Bin [31m0[m -> [32m724739[m bytes
+ lib/features/backup/backup_crypto.dart             |   91 [32m++[m
+ lib/features/backup/backup_page.dart               |  553 [32m++++++++++[m
+ lib/features/backup/backup_payload.dart            |  179 [32m++++[m
+ lib/features/backup/backup_schema.dart             |  200 [32m++++[m
+ lib/features/backup/backup_service.dart            |  477 [32m+++++++++[m
+ lib/features/backup/restore_files.dart             |   92 [32m++[m
+ lib/features/journal/journal_database.dart         |  425 [32m++++++++[m
+ lib/features/journal/journal_editor.dart           |  528 [32m++++++++++[m
+ lib/features/journal/journal_page.dart             |  653 [32m++++++++++++[m
+ lib/features/journal/journal_photos.dart           |  209 [32m++++[m
+ lib/features/journal/journal_widgets.dart          |  325 [32m++++++[m
+ lib/features/money/money_database.dart             |  167 [32m+++[m
+ lib/features/money/money_page.dart                 |  665 [32m++++++++++++[m
+ lib/features/more/documents_page.dart              |  135 [32m+++[m
+ lib/features/more/more_page.dart                   |   35 [32m+[m
+ lib/features/more/more_store.dart                  |   98 [32m++[m
+ lib/features/more/more_theme.dart                  |   39 [32m+[m
+ lib/features/more/notes_page.dart                  |  129 [32m+++[m
+ lib/features/more/passwords_page.dart              |  148 [32m+++[m
+ lib/features/more/settings_page.dart               |  180 [32m++++[m
+ lib/features/more/vault_crypto.dart                |   29 [32m+[m
+ lib/features/more/vault_store.dart                 |   59 [32m++[m
+ lib/features/progress/progress_model.dart          |   49 [32m+[m
+ lib/features/progress/progress_page.dart           |  320 [32m++++++[m
+ lib/features/progress/progress_store.dart          |  126 [32m+++[m
+ lib/features/security/app_lock.dart                |  136 [32m+++[m
+ lib/features/tasks/reminder_schedule.dart          |   20 [32m+[m
+ lib/features/tasks/task_reminders.dart             |  122 [32m+++[m
+ lib/features/tasks/tasks_database.dart             |  126 [32m+++[m
+ lib/features/tasks/tasks_page.dart                 |  574 [32m+++++++++++[m
+ lib/main.dart                                      |  189 [32m++++[m
+ pubspec.lock                                       | 1079 [32m++++++++++++++++++++[m
+ pubspec.yaml                                       |  104 [32m++[m
+ test/backup_crypto_test.dart                       |   72 [32m++[m
+ test/backup_restore_test.dart                      |  252 [32m+++++[m
+ test/progress_model_test.dart                      |   30 [32m+[m
+ test/task_reminder_schedule_test.dart              |   36 [32m+[m
+ test/vault_crypto_test.dart                        |   41 [32m+[m
+ test/widget_test.dart                              |   30 [32m+[m
+ 80 files changed, 9217 insertions(+)
